@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+    <h1>Contact Me</h1>
+    <p>If you have any questions or would like to get in touch, feel free to reach out! <a href="index.html">back to home</a></p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="skills.html">Skills </a> |
+      <a href="projects.html">Projects   | 
+      <a href="media.html">My Media </a> |
+      <a href="contact.html">Contact Me</a>
+    </nav>
+  </header><section>
+      <h2>Send Me a Message</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3" maxlength="60">
+          </p>
+          <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </p>
+          <p>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+251 9XX XXX XXX" pattern="\+?[0-9 ]{9,15}" title="Enter 9 to 15 digits, optionally starting with +">
+          </p>
+          <p>
+            <label for="website">Your Website:</label><br>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Message Details</legend>
+          <p>
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="question">Question</option>
+              <option value="feedback">Feedback</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>How did you find my website?</p>
+          <p>
+            <input type="checkbox" id="search" name="source" value="search" required>
+            <label for="telegram">Telegram</label><br>
+            <input type="checkbox" id="social" name="source" value="social">
+            <label for="linkedin">linkedin </label><br>
+            <input type="checkbox" id="friend" name="source" value="friend">
+            <label for="other">other </label>
+          </p>
+          <p>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your message here..." required minlength="10" maxlength="500"></textarea>
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">Submit Message</button>
+          <button type="reset">Clear Form</button>
+        </p>
+      </form>
+    </section>
+</body>
+</html>
